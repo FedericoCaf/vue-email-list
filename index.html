@@ -14,15 +14,19 @@
 
   <div id="app">
 
-    <h2 v-if="isError" class="text-center my-5 text-danger">Errore!</h2>
-    <h4 v-else-if="isLoading" class="text-center my-5 text-info">Loading...</h4>
-    <h4 v-else class="text-center my-5" v-for="email in emailArray">
-      
-      <ul>
-        <li>{{email}}</li> 
-      </ul>
-      
-    </h4>
+    <div v-cloak class="container">
+      <h2 v-if="isError" class="text-center my-5 text-danger">Errore!</h2>
+      <h4 v-else-if="isLoading" class="text-center my-5 text-info">Loading...</h4>
+      <h4 v-else class="text-center my-5" v-for="email in emailArray">
+        
+        <ul>
+          <li>{{email}}</li> 
+        </ul>
+        
+      </h4>
+    </div>
+
+  
     
     
 

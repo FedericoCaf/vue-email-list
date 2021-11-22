@@ -1,3 +1,7 @@
 body{
   background-color:powderblue;
 }
+
+[v-cloak]{
+  display: none;
+}
